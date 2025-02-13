@@ -146,7 +146,7 @@ LOGGING = {
             'style': '{',
         },
         'standard':{
-            'format':'%(asctime)s [%(levelname)s] %(name)s: %(messages)s'
+            'format':'%(asctime)s [%(levelname)s] %(name)s: %(message)s'
         },
     },
     'handlers': {
@@ -182,7 +182,7 @@ LOGGING = {
         },
         'django.server': {
             'handlers': ['django.server'],
-            'level': 'INFO',
+            'level': 'DEBUG',
             'propagate': False,
         },
     }
