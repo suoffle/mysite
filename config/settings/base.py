@@ -185,5 +185,9 @@ LOGGING = {
             'level': 'INFO',
             'propagate': False,
         },
-    }
+        'mysite': {
+            'handlers':['console','file'],
+            'level':'INFO',
+        },
+    },
 }

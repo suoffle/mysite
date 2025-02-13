@@ -1,6 +1,8 @@
 from django.core.paginator import Paginator
 from django.shortcuts import render, get_object_or_404
 from django.db.models import Q
+import logging
+logger = logging.getLogger('mysite')
 
 from ..models import Question
 
@@ -30,4 +32,4 @@ def detail(request, question_id):
     return render(request, 'mysite/question_detail.html', context)
 
 def index(request):
-    3/0
+    logger.info("INFO 레벨로 출력")
